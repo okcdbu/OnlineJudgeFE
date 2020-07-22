@@ -1,4 +1,4 @@
-# OnlineJudge Front End
+# OnlineJudge Front End Korean Patch
 [![vue](https://img.shields.io/badge/vue-2.5.13-blue.svg?style=flat-square)](https://github.com/vuejs/vue)
 [![vuex](https://img.shields.io/badge/vuex-3.0.1-blue.svg?style=flat-square)](https://vuex.vuejs.org/)
 [![echarts](https://img.shields.io/badge/echarts-3.8.3-blue.svg?style=flat-square)](https://github.com/ecomfe/echarts)
@@ -32,7 +32,17 @@ export TARGET=http://Your-backend
 # serve with hot reload at localhost:8080
 npm run dev
 ```
+## Docker compose file changes
 
+```bash
+npm run build
+```
+get your directory copied and paste it in docker-compose.yml
+oj-backend 
+volume:
+   -/FILE_DIRECTORY/dist:/app/dist
+   
+in cmd, docker-compose up -d
 ## Screenshots
 
 [Check here.](https://github.com/QingdaoU/OnlineJudge)
@@ -44,3 +54,5 @@ Modern browsers and Internet Explorer 10+.
 ## LICENSE
 
 [MIT](http://opensource.org/licenses/MIT)
+
+[Github](http://github.com/ndb796/OnlineJudgeFE) patch files by ndb796
